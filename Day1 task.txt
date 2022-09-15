@@ -1,0 +1,48 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+
+HTTP1
+It the usest works on the textual format.
+There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+It uses requests resource Inlining for use getting multiple pages
+It compresses data by itself.
+
+HTTP2
+It works on the binary protocol.
+It allows multiplexing so one TCP connection is required for multiple requests.
+It uses PUSH frame by server that collects all multiple pages
+It uses HPACK for data compression.
+=====================================================================================================================
+
+Write a blog about objects and its internal representation in Javascript
+
+objects : 
+Syntax for object => objectname.keyname=value
+
+var obj={
+    name:"venkatesh",
+    age:23,
+    salary:40,
+    gender:"male"
+};
+console.log(obj.name); // venkatesh
+console.log(obj.salary); // 40
+
+To add a new key pair 
+---------------------
+Syntax => objectname.keyname=value
+
+var obj={
+    name:"venkatesh",
+    age:23,
+    salary:40,
+    gender:"male"
+};
+obj.address="chennai"
+console.log(obj);
+
+output:
+{ name: 'venkatesh',
+  age: 23,
+  salary: 40,
+  gender: 'male',
+  address: 'chennai' }
